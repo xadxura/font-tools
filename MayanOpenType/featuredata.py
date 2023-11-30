@@ -103,7 +103,7 @@ groupdata = {
 	'insertions' : ['insertionmarkers','insertionsizes1a'],
 	# 'minsizes' : [ 'mt11','mt12','mt13','mt14','mt15','mt16','mt21','mt22','mt23','mt24','mt25','mt26','mt31','mt32','mt33','mt34','mt35','mt36','mt41','mt42','mt43','mt44','mt45','mt46','mt51','mt52','mt53','mt54','mt55','mt56','mt61','mt62','mt63','mt64','mt65','mt66', 'su'],
 	'insertions_all'    : [],
-	'mirror_all'    : [],
+	# 'mirror_all'    : [],
 	'modifiers'     : ['dq_core','mr','tce_all'],
 	'multicorners1' : ['shapes_ts','shapes_bs','shapes_te','shapes_be','it00','cornerglyphs','c0eA'],
 	'multicorners2' : ['shapes_ts2','shapes_bs2','shapes_te2','shapes_be2','it00','cornerglyphs','c1eA'],

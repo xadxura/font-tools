@@ -365,11 +365,6 @@ mkmk = [
     #Lookup // DYNAMIC LOOKUP
     {'name' : 'glyphs_m', 'marks' : '','details' : []},
     #Lookup
-    {'name' : 'mirrors_m', 'marks' : '',
-    'details' : [
-        {'attach':['m0'],'to':['mirror_all'],'anchor':'center'}
-    ]},
-    #Lookup
     {'name' : 'tcb0', 'marks' : '',
     'details' : [
         {'attach':['stems0-h'],'to':['tcb0_mks'],'anchor':'top'}
@@ -437,11 +432,6 @@ mkmk = [
     ]},
     #Lookup //DYNAMIC LOOKUP
     {'name' : 'glyphs_b', 'marks' : '','details' : []},
-    #Lookup
-    {'name' : 'mirrors_b', 'marks' : '',
-    'details' : [
-        {'attach':['b0'],'to':['mirror_all'],'anchor':'bi'}
-    ]},
     # #Lookup
     {'name' : 'damagedsign', 'marks' : '*shadesmkmk',
     'details' : [

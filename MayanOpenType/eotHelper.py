@@ -1864,9 +1864,9 @@ class EotHelper:
         group = 'glyphs_all'
         details = {'aname':'MARK_bi','xtype':'ZERO','ytype':'ZERO','recursive':0}
         anchorgroup(group,[group],details)
-        group = 'mirror_all'
-        details = {'aname':'MARK_bi','xtype':'ZERO','ytype':'ZERO','recursive':0}
-        anchorgroup(group,[group],details)
+        # group = 'mirror_all'
+        # details = {'aname':'MARK_bi','xtype':'ZERO','ytype':'ZERO','recursive':0}
+        # anchorgroup(group,[group],details)
 
         # center        
         preformatanchor('MARK_center','m0','ZERO','ZERO')
@@ -1919,9 +1919,9 @@ class EotHelper:
         group = 'glyphs_all'
         details = {'aname':'MARK_center','xtype':'ZERO','ytype':'MID','recursive':0}
         anchorgroup(group,[group],details)
-        group = 'mirror_all'
-        details = {'aname':'MARK_center','xtype':'ZERO','ytype':'MID','recursive':0}
-        anchorgroup(group,[group],details)
+        # group = 'mirror_all'
+        # details = {'aname':'MARK_center','xtype':'ZERO','ytype':'MID','recursive':0}
+        # anchorgroup(group,[group],details)
         group = 'controls_joiners'
         details = {'aname':'MARK_center','xtype':'MID','ytype':'MID','recursive':0}
         anchorgroup(group,[group],details)
@@ -6364,7 +6364,8 @@ class EotHelper:
             print('Compiling font...')
             dumpTTX('fontout_temp.ttf')
 
-            self.writeCMAP()
+            if self.pvar['variations'] == 1:
+                self.writeCMAP()
             self.writeVMTX()
             self.writeVHEA()
             self.writeTSIV()
